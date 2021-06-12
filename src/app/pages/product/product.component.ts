@@ -3,7 +3,7 @@ import {NgForm} from "@angular/forms";
 import {Product} from "../../models/product/product";
 import {ProductService} from "../../services/product.service";
 import {ActivatedRoute, Router} from "@angular/router";
-
+import * as _ from "lodash";
 
 @Component({
   selector: 'app-product',

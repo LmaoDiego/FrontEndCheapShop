@@ -3,8 +3,14 @@
     {
       "id": 1,
       "name": "RTX 3080",
-      "price": 1000,
+      "price": 1500,
       "description": "New Generation Graphic"
+    },
+    {
+      "name": "Ryzen 5 3600",
+      "price": 1500,
+      "description": "Ryzen 5 up to 3.3ghz",
+      "id": 2
     }
   ]
 }
