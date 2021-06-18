@@ -7,7 +7,7 @@ import {catchError, retry} from "rxjs/operators";
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class ProductsApiService {
   //Products Endpoint
   basePath ='http://localhost:3000/api/products'
   constructor(private http:HttpClient) { }

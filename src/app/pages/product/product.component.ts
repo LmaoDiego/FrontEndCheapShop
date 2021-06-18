@@ -1,7 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {Product} from "../../models/product/product";
-import {ProductService} from "../../services/product.service";
+import {ProductsApiService} from "../../services/products-api.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import * as _ from "lodash";
 
@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit {
   defaultProduct: Product = { id: 0, name: '', price: 0, description: ''};
 
 //
-  constructor(private productsApi: ProductService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private productsApi: ProductsApiService, private router: Router, private route: ActivatedRoute) { }
 
 
   ngOnInit(): void {
