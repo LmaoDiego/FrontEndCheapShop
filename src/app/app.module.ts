@@ -27,7 +27,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatDialogModule} from "@angular/material/dialog";
 import { HomeComponent } from './pages/home/home/home.component';
 import {ProductsComponent} from "./pages/products/products.component";
-// import { UserComponent } from './models/user/user.component';
+import { UserComponent } from './pages/user/user.component';
+import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 // import { SupplierComponent } from './models/supplier/supplier.component';
 
 
@@ -41,9 +42,10 @@ import {ProductsComponent} from "./pages/products/products.component";
     // DistrictComponent,
     ProductComponent,
     HomeComponent,
-    // UserComponent,
+    UserComponent,
     // SupplierComponent,
-    ProductsComponent
+    ProductsComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,

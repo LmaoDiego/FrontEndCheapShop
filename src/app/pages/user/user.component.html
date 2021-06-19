@@ -1,1 +1,28 @@
-<p>user works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+    <a href="javascript:void(0)"  (click)="navigateToHome()">
+      <mat-icon  style="padding-right: 10px;">home</mat-icon>
+    </a>
+    User Profile
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-label><h3>Firstname</h3> </mat-label>
+    <p>{{userData.firstname}}</p>
+    <mat-label><h3>Lastname</h3></mat-label>
+    <p>{{userData.lastname}}</p>
+    <mat-label><h3>Postal Code</h3></mat-label>
+    <p>{{userData.postalCode}}</p>
+    <mat-label><h3>Date Of Birth</h3></mat-label>
+    <p>{{userData.dateOfBirth}}</p>
+    <mat-label><h3>Address</h3></mat-label>
+    <p>{{userData.address}}</p>
+    <mat-label><h3>Phone Number</h3></mat-label>
+    <p>{{userData.phoneNumber}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button class="mat-button-text" color="primary" (click)="navigateToEditUser(userData.id)">Edit</a>
+  </mat-card-actions>
+</mat-card>
+

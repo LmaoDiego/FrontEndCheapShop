@@ -12,5 +12,25 @@
       "description": "Ryzen 5 up to 3.3ghz",
       "id": 2
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Jose",
+      "lastname": "Gustavo",
+      "postalCode": 1100,
+      "dateOfBirth": "22/05/2002",
+      "address": "Av.los Aires",
+      "phoneNumber": "987456332"
+    },
+    {
+      "id": 2,
+      "firstname": "Adrian",
+      "lastname": "Gustavo",
+      "postalCode": 1100,
+      "dateOfBirth": "22/05/2002",
+      "address": "Av.los Aires",
+      "phoneNumber": 987456321
+    }
   ]
 }
