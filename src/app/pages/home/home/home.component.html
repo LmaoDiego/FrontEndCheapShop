@@ -1,1 +1,12 @@
-<p>home works!</p>
+<mat-card *ngFor="let pr of products" class="product-card">
+  <mat-card-header>
+    <mat-card-title>{{pr.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{pr.description}}</p>
+  </mat-card-content>
+  <mat-card-actions class="action-buttons">
+    <button mat-raised-button color="primary" matTooltip="Buy Product" (click)="navigateToPublishedProduct(pr.id)">
+      <mat-icon>shopping_cart</mat-icon></button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{productData.name}}</mat-card-title>
+
+  </mat-card-header>
+  <mat-card-content>
+
+    <mat-card-subtitle >
+      <b>Description:</b>
+
+    </mat-card-subtitle>
+    <p>
+      {{productData.description}}
+    </p>
+    <mat-card-subtitle ><b>Price:</b></mat-card-subtitle>
+    <p>{{productData.price}}</p>
+    <mat-card-subtitle ><b>Waiting people:</b></mat-card-subtitle>
+    <p>0/40</p>
+  </mat-card-content>
+  <mat-form-field appearance="fill">
+    <b>Quantity:</b>
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </mat-form-field>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Make the order</button>
+  </mat-card-actions>
+</mat-card>
