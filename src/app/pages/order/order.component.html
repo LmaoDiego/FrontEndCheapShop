@@ -1,1 +1,37 @@
-<p>order works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{isEditMode ? 'Edit Order' : 'Add Order'}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (submit)="onSubmit()" #orderForm="ngForm">
+      <p>
+        <mat-form-field>
+          <mat-label>Order Name</mat-label>
+          <input matInput placeholder="Date" name="date" required [(ngModel)]="orderData.date">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Order amount</mat-label>
+          <input matInput placeholder="Oder amount" name="order_amount" type="number" required [(ngModel)]="orderData.order_amount">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Delivery date</mat-label>
+          <input matInput placeholder="Delivery date" name="delivery_date" required [(ngModel)]="orderData.delivery_date">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Delivery address</mat-label>
+          <input matInput placeholder="Delivery address" name="delivery_address" required [(ngModel)]="orderData.delivery_address">
+        </mat-form-field>
+      </p>
+      <p>
+        <ng-container>
+          <button mat-button class="mat-button-text" color="primary">{{ isEditMode ? 'Update' : 'Add'}}
+          </button>
+
+          <a mat-button class="mat-button-text" color="warn" (click)="cancelEdit()">Cancel</a>
+        </ng-container>
+      </p>
+    </form>
+  </mat-card-content>
+</mat-card>

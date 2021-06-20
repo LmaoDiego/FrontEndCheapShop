@@ -14,7 +14,7 @@ export class ProductsApiService {
   //Http Default Options
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})};
   //
-  //API Erro Handling (importante)
+  //API Error Handling (importante)
   handleError(error: HttpErrorResponse): Observable<never> {
     if (error.error instanceof ErrorEvent) {
       console.log('An error occurred: ', error.error.message);

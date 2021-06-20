@@ -12,5 +12,21 @@
       "description": "Ryzen 5 up to 3.3ghz",
       "id": 2
     }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "date": "21 de abril",
+      "order_amount": 4000,
+      "delivery_date": "30 de julio",
+      "delivery_address": "Av.los aires"
+    },
+    {
+      "id": 2,
+      "date": "27 de mayo",
+      "order_amount": 8000,
+      "delivery_date": "30 de julio",
+      "delivery_address": "Av.los aires"
+    }
   ]
 }
