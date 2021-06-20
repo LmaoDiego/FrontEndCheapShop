@@ -1,26 +1,36 @@
 {
   "products": [
     {
+      "id": 1,
+      "name": "RTX 3080",
+      "price": 1500,
+      "description": "New Generation Graphic"
+    },
+    {
       "name": "Ryzen 5 3600",
       "price": 1500,
       "description": "Ryzen 5 up to 3.3ghz",
       "id": 2
     }
   ],
-  "orders": [
+  "users": [
     {
       "id": 1,
-      "date": "21 de abril",
-      "order_amount": 4000,
-      "delivery_date": "30 de julio",
-      "delivery_address": "Av.los aires"
+      "firstname": "Jose",
+      "lastname": "Gustavo",
+      "postalCode": 1100,
+      "dateOfBirth": "22/05/2002",
+      "address": "Av.los Aires",
+      "phoneNumber": "987456332"
     },
     {
       "id": 2,
-      "date": "27 de mayo",
-      "order_amount": 8000,
-      "delivery_date": "30 de julio",
-      "delivery_address": "Av.los aires"
+      "firstname": "Adrian",
+      "lastname": "Gustavo",
+      "postalCode": 1100,
+      "dateOfBirth": "22/05/2002",
+      "address": "Av.los Aires",
+      "phoneNumber": 987456321
     }
   ]
 }
