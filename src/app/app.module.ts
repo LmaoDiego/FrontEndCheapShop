@@ -28,14 +28,20 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { HomeComponent } from './pages/home/home/home.component';
 import {ProductsComponent} from "./pages/products/products.component";
 import { UserComponent } from './pages/user/user.component';
-import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+
+import {PublishedProductComponent} from "./pages/published-product/published-product.component";
+import {OrderComponent} from "./pages/order/order.component";
+import {EditProfileComponent} from "./pages/edit-profile/edit-profile.component";
+import {OrdersComponent} from "./pages/orders/orders.component";
+import {MatTreeModule} from "@angular/material/tree";
 // import { SupplierComponent } from './models/supplier/supplier.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // OrderComponent,
+    OrderComponent,
+    OrdersComponent,
     // CategoryComponent,
     // CommentComponent,
     // DepartmentComponent,
@@ -45,6 +51,7 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
     UserComponent,
     // SupplierComponent,
     ProductsComponent,
+    PublishedProductComponent,
     EditProfileComponent
   ],
   imports: [
@@ -63,7 +70,8 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
     MatPaginatorModule,
     HttpClientModule,
     MatTooltipModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTreeModule
   ],
   providers: [ProductsApiService],
   bootstrap: [AppComponent]

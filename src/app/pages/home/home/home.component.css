@@ -1,0 +1,11 @@
+.product-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 400px;
+}
+
+.action-buttons{
+  margin-left: 300px;
+}

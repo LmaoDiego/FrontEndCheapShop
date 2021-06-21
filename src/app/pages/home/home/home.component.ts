@@ -4,6 +4,7 @@ import {ProductsApiService} from "../../../services/products-api.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import * as _ from 'lodash';
 import {NgForm} from "@angular/forms";
+import {MatTableDataSource} from "@angular/material/table";
 
 @Component({
   selector: 'app-home',
@@ -12,9 +13,12 @@ import {NgForm} from "@angular/forms";
 })
 export class HomeComponent implements OnInit {
 
+
   products:any=[];
   productData: Product={} as Product;
   productId!:number;
+  dataSource = new MatTableDataSource();
+  isFiltering = false;
   constructor(private productsApi: ProductsApiService, private router: Router,private route:ActivatedRoute) {
 
   }
@@ -38,5 +42,12 @@ export class HomeComponent implements OnInit {
     this.router.navigate([`catalog/product/${productId}`])
       .then(() => console.log(this.route.url) );
   }
-
+  applyFilter(event: Event): void {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+    this.isFiltering = !!filterValue;
+  }
 }

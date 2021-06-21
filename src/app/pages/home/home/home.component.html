@@ -1,7 +1,17 @@
+<mat-card>
+  <mat-form-field>
+    <mat-label>Busca tu producto ahora!</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex.Keyboard RGB" #input>
+    <mat-icon *ngIf="isFiltering" matSuffix>search</mat-icon>
+  </mat-form-field>
+</mat-card>
+<h1></h1>
 <mat-card *ngFor="let pr of products" class="product-card">
+
   <mat-card-header>
     <mat-card-title>{{pr.name}}</mat-card-title>
   </mat-card-header>
+  <img mat-card-image src="https://t7m8e9c8.rocketcdn.me/wp-content/uploads/2021/06/geforce-rtx-3080-ti-product-gallery-inline-850-3-780x470.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>{{pr.description}}</p>
   </mat-card-content>
@@ -10,3 +20,4 @@
       <mat-icon>shopping_cart</mat-icon></button>
   </mat-card-actions>
 </mat-card>
+

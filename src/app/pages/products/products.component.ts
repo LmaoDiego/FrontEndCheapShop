@@ -18,11 +18,12 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   @ViewChild('productForm', { static: false }) productForm!: NgForm;
   productData: Product;
   dataSource = new MatTableDataSource();
+  isFiltering = false;
   displayedColumns: string[] = ['id', 'name', 'price', 'description', 'actions'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   isEditMode = false;
-  isFiltering = false;
+
 
   constructor(private productsApi: ProductsApiService, private router: Router) {
     this.productData = {} as Product;
