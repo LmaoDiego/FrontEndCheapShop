@@ -1,6 +1,6 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Products</mat-card-title>
+    <mat-card-title>Ordenes</mat-card-title>
     <mat-card-subtitle>{{ isEditMode ? 'Edit Order' : 'Add new Order' }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
@@ -31,7 +31,7 @@
       <mat-grid-tile>
         <mat-form-field>
           <mat-label>Filter</mat-label>
-          <input matInput (keyup)="applyFilter($event)" placeholder="Ex.Graphic Card" #input>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Ex.My order [profile name]" #input>
           <mat-icon *ngIf="isFiltering" matSuffix>search</mat-icon>
         </mat-form-field>
       </mat-grid-tile>
@@ -50,11 +50,11 @@
         <td mat-cell *matCellDef="let element"> {{ element.order_amount }}</td>
       </ng-container>
       <ng-container matColumnDef="delivery_date">
-        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <th mat-header-cell *matHeaderCellDef> Delivery Date </th>
         <td mat-cell *matCellDef="let element"> {{ element.delivery_date }}</td>
       </ng-container>
       <ng-container matColumnDef="delivery_address">
-        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <th mat-header-cell *matHeaderCellDef> Delivery Address </th>
         <td mat-cell *matCellDef="let element"> {{ element.delivery_address }}</td>
       </ng-container>
       <ng-container matColumnDef="actions">
@@ -72,7 +72,7 @@
     <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
   </mat-card-content>
   <mat-card-actions>
-    <a mat-button class="mat-button-text" color="primary" (click)="navigateToAddOrder()">Add Product</a>
+    <a mat-button class="mat-button-text" color="primary" (click)="navigateToAddOrder()">Add New Order</a>
     <a mat-button class="mat-button-text" color="primary" (click)="refresh()">Reload</a>
   </mat-card-actions>
 </mat-card>
