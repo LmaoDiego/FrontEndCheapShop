@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort} from "@angular/material/sort";
 import {MatTableDataSource} from "@angular/material/table";
@@ -14,7 +14,7 @@ import {Product} from "../../models/product/product";
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent implements OnInit, AfterViewInit {
+export class ProductsComponent implements OnInit, AfterViewInit,OnDestroy {
   @ViewChild('productForm', { static: false }) productForm!: NgForm;
   productData: Product;
   dataSource = new MatTableDataSource();
@@ -111,6 +111,10 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   refresh(): void {
     console.log('about to reload');
     this.getAllProducts();
+  }
+
+  ngOnDestroy(): void {
+    this.productsApi.categoryFilter="";
   }
 
 
