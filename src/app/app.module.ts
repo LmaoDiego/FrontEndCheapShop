@@ -34,6 +34,8 @@ import {OrderComponent} from "./pages/order/order.component";
 import {EditProfileComponent} from "./pages/edit-profile/edit-profile.component";
 import {OrdersComponent} from "./pages/orders/orders.component";
 import {MatTreeModule} from "@angular/material/tree";
+import {CategoryComponent} from "./pages/category/category.component";
+import { CategoriesComponent } from './pages/categories/categories.component';
 // import { SupplierComponent } from './models/supplier/supplier.component';
 
 
@@ -42,7 +44,7 @@ import {MatTreeModule} from "@angular/material/tree";
     AppComponent,
     OrderComponent,
     OrdersComponent,
-    // CategoryComponent,
+    CategoryComponent,
     // CommentComponent,
     // DepartmentComponent,
     // DistrictComponent,
@@ -52,7 +54,8 @@ import {MatTreeModule} from "@angular/material/tree";
     // SupplierComponent,
     ProductsComponent,
     PublishedProductComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +74,7 @@ import {MatTreeModule} from "@angular/material/tree";
     HttpClientModule,
     MatTooltipModule,
     MatDialogModule,
-    MatTreeModule
+    MatTreeModule,
   ],
   providers: [ProductsApiService],
   bootstrap: [AppComponent]

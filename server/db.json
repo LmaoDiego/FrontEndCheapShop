@@ -48,5 +48,32 @@
       "delivery_date": "30 de julio",
       "delivery_address": "Av.los aires"
     }
+  ],
+  "categories": [
+    {
+      "id":1,
+      "name": "Graphic Cards",
+      "description": "https://t7m8e9c8.rocketcdn.me/wp-content/uploads/2021/06/geforce-rtx-3080-ti-product-gallery-inline-850-3-780x470.jpg"
+    },
+    {
+      "id":2,
+      "name": "Computer Mice",
+      "description": "https://basic-tutorials.com/wp-content/uploads/2020/09/Logitech-G305-780x470.png"
+    },
+    {
+      "id":3,
+      "name": "Keyboards",
+      "description": "https://interreviewed.com/wp-content/uploads/2021/06/fnatic-streak-press-780x470.jpg"
+    },
+    {
+      "id":4,
+      "name": "Chairs",
+      "description": "https://basic-tutorials.com/wp-content/uploads/2019/12/Backforce-One-Gaming-Stuhl-780x470.jpg"
+    },
+    {
+      "id":5,
+      "name": "Laptops",
+      "description": "https://dlprivateserver.com/wp-content/uploads/2021/05/5-laptops-para-juegos-que-actualmente-puedes-conseguir-m%C3%A1s-baratas-780x470.jpg"
+    }
   ]
 }

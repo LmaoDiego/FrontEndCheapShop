@@ -25,7 +25,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   isEditMode = false;
 
 
-  constructor(private productsApi: ProductsApiService, private router: Router) {
+  constructor(public productsApi: ProductsApiService, private router: Router) {
     this.productData = {} as Product;
   }
 
@@ -36,10 +36,12 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.applyFilter();
   }
 
-  applyFilter(event: Event): void {
-    const filterValue = (event.target as HTMLInputElement).value;
+  applyFilter(): void {
+    //const filterValue = (event.target as HTMLInputElement).value;
+    const filterValue = (document.getElementById("1")as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();

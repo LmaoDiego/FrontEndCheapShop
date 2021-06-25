@@ -10,6 +10,7 @@ import {catchError, retry} from "rxjs/operators";
 export class ProductsApiService {
   //Products Endpoint
   basePath ='http://localhost:3000/api/products'
+  categoryFilter:string="";
   constructor(private http:HttpClient) { }
   //Http Default Options
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})};

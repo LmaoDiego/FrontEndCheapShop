@@ -28,7 +28,7 @@
       <mat-grid-tile>
         <mat-form-field>
           <mat-label>Filter</mat-label>
-          <input matInput (keyup)="applyFilter($event)" placeholder="Ex.Graphic Card" #input>
+          <input matInput id="1" (keyup)="applyFilter()" placeholder="Ex.Graphic Card" #input [value]="productsApi.categoryFilter">
           <mat-icon *ngIf="isFiltering" matSuffix>search</mat-icon>
         </mat-form-field>
       </mat-grid-tile>
