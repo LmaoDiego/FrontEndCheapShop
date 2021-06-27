@@ -36,17 +36,24 @@
   "orders": [
     {
       "id": 1,
-      "date": "21 de abril",
-      "order_amount": 4000,
+      "purchase_date": "21 de abril",
+      "amount": 4000,
       "delivery_date": "30 de julio",
-      "delivery_address": "Av.los aires"
+      "delivery_address": "Av. los Aires"
     },
     {
       "id": 2,
-      "date": "27 de mayo",
-      "order_amount": 8000,
+      "purchase_date": "27 de mayo",
+      "amount": 8000,
       "delivery_date": "30 de julio",
-      "delivery_address": "Av.los aires"
+      "delivery_address": "Av. los Aires "
+    },
+    {
+      "purchase_date": "28 de mayo",
+      "amount": 5000,
+      "delivery_date": "30 de julio",
+      "delivery_address": "Av. Caiman",
+      "id": 3
     }
   ],
   "categories": [
