@@ -34,23 +34,24 @@
     }
   ],
   "orders": [
+
     {
       "id": 1,
-      "purchase_date": "21 de abril",
-      "amount": 4000,
+      "date": "21 de abril",
+      "order_amount": 4000,
       "delivery_date": "30 de julio",
       "delivery_address": "Av. los Aires"
     },
     {
       "id": 2,
-      "purchase_date": "27 de mayo",
-      "amount": 8000,
+      "date": "27 de mayo",
+      "order_amount": 8000,
       "delivery_date": "30 de julio",
       "delivery_address": "Av. los Aires "
     },
     {
-      "purchase_date": "28 de mayo",
-      "amount": 5000,
+      "date": "28 de mayo",
+      "order_amount": 5000,
       "delivery_date": "30 de julio",
       "delivery_address": "Av. Caiman",
       "id": 3
