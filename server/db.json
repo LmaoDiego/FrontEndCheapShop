@@ -35,50 +35,53 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "purchase_date": "21 de abril",
-      "amount": 4000,
-      "delivery_date": "30 de julio",
-      "delivery_address": "Av. los Aires"
-    },
-    {
-      "id": 2,
-      "purchase_date": "27 de mayo",
-      "amount": 8000,
-      "delivery_date": "30 de julio",
-      "delivery_address": "Av. los Aires "
-    },
-    {
+      "id": 3,
+      "amount": 1500,
       "purchase_date": "28 de mayo",
-      "amount": 5000,
       "delivery_date": "30 de julio",
       "delivery_address": "Av. Caiman",
-      "id": 3
+      "userid": 1
+    },
+    {
+      "userid": 4,
+      "amount": 3000,
+      "purchase_date": "13 de julio",
+      "delivery_date": "13 de agosto",
+      "delivery_address": "Av. los Aires",
+      "id": 4
+    },
+    {
+      "userid": 1,
+      "amount": 1000,
+      "purchase_date": "11 de junio",
+      "delivery_date": "23 de agosto",
+      "delivery_address": "Av. Caiman",
+      "id": 5
     }
   ],
   "categories": [
     {
-      "id":1,
+      "id": 1,
       "name": "Graphic Cards",
       "description": "https://t7m8e9c8.rocketcdn.me/wp-content/uploads/2021/06/geforce-rtx-3080-ti-product-gallery-inline-850-3-780x470.jpg"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Computer Mice",
       "description": "https://basic-tutorials.com/wp-content/uploads/2020/09/Logitech-G305-780x470.png"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Keyboards",
       "description": "https://interreviewed.com/wp-content/uploads/2021/06/fnatic-streak-press-780x470.jpg"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Chairs",
       "description": "https://basic-tutorials.com/wp-content/uploads/2019/12/Backforce-One-Gaming-Stuhl-780x470.jpg"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "Laptops",
       "description": "https://dlprivateserver.com/wp-content/uploads/2021/05/5-laptops-para-juegos-que-actualmente-puedes-conseguir-m%C3%A1s-baratas-780x470.jpg"
     }
