@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort} from "@angular/material/sort";
 import {MatTableDataSource} from "@angular/material/table";
@@ -14,7 +14,7 @@ import {Product} from "../../models/product/product";
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent implements OnInit, AfterViewInit {
+export class ProductsComponent implements OnInit, AfterViewInit,OnDestroy {
   @ViewChild('productForm', { static: false }) productForm!: NgForm;
   productData: Product;
   dataSource = new MatTableDataSource();
@@ -25,7 +25,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   isEditMode = false;
 
 
-  constructor(private productsApi: ProductsApiService, private router: Router) {
+  constructor(public productsApi: ProductsApiService, private router: Router) {
     this.productData = {} as Product;
   }
 
@@ -36,10 +36,12 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.applyFilter();
   }
 
-  applyFilter(event: Event): void {
-    const filterValue = (event.target as HTMLInputElement).value;
+  applyFilter(): void {
+    //const filterValue = (event.target as HTMLInputElement).value;
+    const filterValue = (document.getElementById("1")as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
@@ -109,6 +111,10 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   refresh(): void {
     console.log('about to reload');
     this.getAllProducts();
+  }
+
+  ngOnDestroy(): void {
+    this.productsApi.categoryFilter="";
   }
 
 

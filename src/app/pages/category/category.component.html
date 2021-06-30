@@ -1,1 +1,29 @@
-<p>category works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{isEditMode ? 'Edit Category' : 'Add Category'}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (submit)="onSubmit()" #categoryForm="ngForm">
+      <p>
+        <mat-form-field>
+          <mat-label>Category Name</mat-label>
+          <input matInput placeholder="Name" name="name" required [(ngModel)]="categoryData.name">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Description" name="description" required [(ngModel)]="categoryData.description">
+        </mat-form-field>
+      </p>
+      <p>
+        <ng-container>
+          <button mat-button class="mat-button-text" color="primary">{{ isEditMode ? 'Update' : 'Add'}}
+          </button>
+
+          <a mat-button class="mat-button-text" color="warn" (click)="cancelEdit()">Cancel</a>
+        </ng-container>
+      </p>
+    </form>
+  </mat-card-content>
+</mat-card>
