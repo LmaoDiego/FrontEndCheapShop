@@ -16,7 +16,7 @@ export class OrderComponent implements OnInit {
   isEditMode = false;
   orderId!: number;
   orderData: Order = {} as Order;
-  defaultOrder: Order = { id: 0, date: '', order_amount: 0, delivery_address: '', delivery_date: ''};
+  defaultOrder: Order = { id: 0, userid:0,amount: 0, purchase_date:'', delivery_date: '', delivery_address: ''};
   constructor(private ordersApi: OrdersApiService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -51,7 +51,7 @@ export class OrderComponent implements OnInit {
       });
   }
   addOrder(): void {
-    const newOrder = {date: this.orderData.date, order_amount: this.orderData.order_amount, delivery_date: this.orderData.delivery_date, delivery_address: this.orderData.delivery_address};
+    const newOrder = {userid: this.orderData.userid, amount: this.orderData.amount, purchase_date: this.orderData.purchase_date,delivery_date: this.orderData.delivery_date, delivery_address: this.orderData.delivery_address};
     this.ordersApi.addOrder(newOrder)
       .subscribe(() => {
         this.navigateToOrders();

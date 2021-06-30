@@ -1,37 +1,13 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Ordenes</mat-card-title>
-    <mat-card-subtitle>{{ isEditMode ? 'Edit Order' : 'Add new Order' }}</mat-card-subtitle>
+    <mat-card-title>Orders</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <mat-grid-list cols="2" rowHeight="100px">
-      <mat-grid-tile>
-        <form (submit)="onSubmit()" #orderForm="ngForm">
-          <mat-form-field>
-            <input matInput placeholder="Date" name="date" required [(ngModel)]="orderData.date">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Order amount" name="order_amount" type="number" required [(ngModel)]="orderData.order_amount">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Delivery date" name="delivery_date" required [(ngModel)]="orderData.delivery_date">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Delivery address" name="delivery_address" required [(ngModel)]="orderData.delivery_address">
-          </mat-form-field>
-          <ng-container *ngIf="isEditMode; else elseTemplate">
-            <button mat-button color="primary" class="mat-button-text">Update</button>
-            <button mat-button class="mat-button-text" color="warn" (click)="cancelEdit()">Cancel</button>
-          </ng-container>
-          <ng-template #elseTemplate>
-            <button mat-button color="primary" class="mat-button-text">Add</button>
-          </ng-template>
-        </form>
-      </mat-grid-tile>
+    <mat-grid-list cols="5" rowHeight="70px">
       <mat-grid-tile>
         <mat-form-field>
-          <mat-label>Filter</mat-label>
-          <input matInput (keyup)="applyFilter($event)" placeholder="Ex.My order [profile name]" #input>
+          <mat-label>Filter by UserId</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Insert User Id" #input>
           <mat-icon *ngIf="isFiltering" matSuffix>search</mat-icon>
         </mat-form-field>
       </mat-grid-tile>
@@ -41,13 +17,17 @@
         <th mat-header-cell *matHeaderCellDef> #Id </th>
         <td mat-cell *matCellDef="let element"> {{ element.id }}</td>
       </ng-container>
-      <ng-container matColumnDef="date">
-        <th mat-header-cell *matHeaderCellDef> Date </th>
-        <td mat-cell *matCellDef="let element"> {{ element.date }}</td>
+      <ng-container matColumnDef="userid">
+        <th mat-header-cell *matHeaderCellDef> User Id </th>
+        <td mat-cell *matCellDef="let element"> {{ element.userid }}</td>
       </ng-container>
-      <ng-container matColumnDef="order_amount">
-        <th mat-header-cell *matHeaderCellDef> Order Amount </th>
-        <td mat-cell *matCellDef="let element"> {{ element.order_amount }}</td>
+      <ng-container matColumnDef="amount">
+        <th mat-header-cell *matHeaderCellDef> Amount </th>
+        <td mat-cell *matCellDef="let element"> {{ element.amount }}</td>
+      </ng-container>
+      <ng-container matColumnDef="purchase_date">
+        <th mat-header-cell *matHeaderCellDef> Purchase Date </th>
+        <td mat-cell *matCellDef="let element"> {{ element.purchase_date }}</td>
       </ng-container>
       <ng-container matColumnDef="delivery_date">
         <th mat-header-cell *matHeaderCellDef> Delivery Date </th>
@@ -60,7 +40,6 @@
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let element">
-          <a href="javascript:void(0)"  (click)="editItem(element)"><mat-icon inline aria-hidden="false" aria-label="Edit" style="padding-right: 10px;">edit</mat-icon></a>
           <a href="javascript:void(0)"  (click)="navigateToEditOrder(element.id)"><mat-icon inline aria-hidden="false" aria-label="Edit" style="padding-right: 10px;">details</mat-icon></a>
           <a href="javascript:void(0)" (click)="deleteItem(element.id)"><mat-icon inline aria-hidden="false" aria-label="Delete">delete</mat-icon></a>
         </td>
@@ -69,8 +48,9 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"
           [ngClass]="{'editable-row': orderData.id === row.id}"></tr>
     </table>
-    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+    <mat-paginator [pageSize]="10" [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
   </mat-card-content>
+
   <mat-card-actions>
     <a mat-button class="mat-button-text" color="primary" (click)="navigateToAddOrder()">Add New Order</a>
     <a mat-button class="mat-button-text" color="primary" (click)="refresh()">Reload</a>
