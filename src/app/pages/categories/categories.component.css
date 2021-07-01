@@ -1,13 +1,23 @@
 .category-card {
   display: block;
+  box-sizing: border-box;
   margin:20px;
-  width: 100%;
+  width: 50%;
   min-width: 300px;
   max-width: 400px;
-
+  max-height: 400px;
+  border: 1px solid transparent;
 }
 .cards{
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
+  justify-content:space-around;
+}
 
+.image{
+  max-height: 75%;
+}
+.category-card:hover{
+  border: 1px solid black;
 }

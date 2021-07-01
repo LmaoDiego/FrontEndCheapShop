@@ -34,6 +34,11 @@ export class CategoriesComponent implements OnInit {
 
   }
 
+  navigateToCategory(categoryName:string):void{
+    this.router.navigate([`categories/${categoryName}`])
+      .then(() => console.log(this.route.url) );
+  }
+
   navigateToProducts(categoryName:string): void {
     this.productsApi.categoryFilter=categoryName;
     this.router.navigate([`products`])

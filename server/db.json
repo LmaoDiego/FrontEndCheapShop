@@ -2,15 +2,99 @@
   "products": [
     {
       "id": 1,
-      "name": "RTX 3080",
-      "price": 1500,
-      "description": "New Generation Graphic"
+      "name": "Ryzen 3 3200G",
+      "price": 500,
+      "description": "Ryzen 3 up to 3.9ghz",
+      "url": "https://www.muycomputer.com/wp-content/uploads/2017/07/RYZEN-3-2.jpg",
+      "category": "Processors"
     },
     {
+      "id": 2,
       "name": "Ryzen 5 3600",
+      "price": 700,
+      "description": "Ryzen 5 up to 4.1ghz",
+      "url": "https://www.amd.com/system/files/2019-06/238593-ryzen-5-pib-left-facing-1260x709.png",
+      "category": "Processors"
+    },
+    {
+      "id": 3,
+      "name": "Ryzen 7 3800XT",
+      "price": 1000,
+      "description": "Ryzen 7 up to 4.7ghz",
+        "url": "https://www.amd.com/system/files/2020-06/450039-amd-ryzen-7-3rd-gen-PIB-left-facing-1260x709.png",
+      "category": "Processors"
+    },
+    {
+      "id": 4,
+      "name": "RTX 3080",
       "price": 1500,
-      "description": "Ryzen 5 up to 3.3ghz",
-      "id": 2
+      "description": "New Generation Graphic",
+      "url": "https://www.fm1053.com.ar/web/wp-content/uploads/2021/06/1024_2000-780x470.jpg",
+      "category": "Graphic Cards"
+    },
+    {
+      "id": 5,
+      "name": "RTX 2080 TI",
+      "price": 1400,
+      "description": "New Generation Graphic",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/514km%2BZccrL._AC_SL1000_.jpg",
+      "category": "Graphic Cards"
+    },
+    {
+      "id": 6,
+      "name": "RTX 5600 XT",
+      "price": 1400,
+      "description": "New Generation Graphic",
+      "url": "https://bluepail.com.co/wp-content/uploads/2020/08/radeon5600xtgigabyte.jpg",
+      "category": "Graphic Cards"
+    },
+    {
+      "id": 7,
+      "name": "Razer Orochi V2",
+      "price": 70,
+      "description": "Mouse gamer white",
+      "url": "https://assets2.razerzone.com/images/pnx.assets/ca2f7dabb8b54e111b4272884d4663e1/orochi-white.jpg",
+      "category": "Computer Mice"
+    },
+    {
+      "id": 8,
+      "name": "Logitech MX Master 3",
+      "price": 100,
+      "description": "Mouse gamer black",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/614w3LuZTYL._AC_SL1500_.jpg",
+      "category": "Computer Mice"
+    },
+    {
+      "id": 9,
+      "name": "Antryx Chrome Storm Xcalibur",
+      "price": 50,
+      "description": "Mouse gamer black",
+      "url": "https://http2.mlstatic.com/D_NQ_NP_885487-MPE43580778477_092020-O.jpg",
+      "category": "Computer Mice"
+    },
+    {
+      "id": 10,
+      "name": "Logitech Craft",
+      "price": 200,
+      "description": "Design keyboard",
+      "url": "https://i.blogs.es/86e5c4/high_resolution-craft-lifestyle-12/450_1000.png",
+      "category": "Keyboards"
+    },
+    {
+      "id": 11,
+      "name": "Vulcan 120 AIMO",
+      "price": 140,
+      "description": "RGB gaming Keyboard",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/81fOOFV6T8L._AC_SL1500_.jpg",
+      "category": "Keyboards"
+    },
+    {
+      "id": 12,
+      "name": "Razer Huntsman V2 ",
+      "price": 210,
+      "description": "RGB gaming Keyboard analog",
+      "url": "https://static.techspot.com/images/products/2021/keyboards/org/2021-02-05-product-2.jpg",
+      "category": "Keyboards"
     }
   ],
   "users": [
@@ -51,29 +135,34 @@
   ],
   "categories": [
     {
-      "id":1,
+      "id": 1,
       "name": "Graphic Cards",
-      "description": "https://t7m8e9c8.rocketcdn.me/wp-content/uploads/2021/06/geforce-rtx-3080-ti-product-gallery-inline-850-3-780x470.jpg"
+      "description": "https://itseller.bo/wp-content/uploads/2020/08/de3erf-780x470.jpg"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Computer Mice",
       "description": "https://basic-tutorials.com/wp-content/uploads/2020/09/Logitech-G305-780x470.png"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Keyboards",
       "description": "https://interreviewed.com/wp-content/uploads/2021/06/fnatic-streak-press-780x470.jpg"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Chairs",
       "description": "https://basic-tutorials.com/wp-content/uploads/2019/12/Backforce-One-Gaming-Stuhl-780x470.jpg"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "Laptops",
       "description": "https://dlprivateserver.com/wp-content/uploads/2021/05/5-laptops-para-juegos-que-actualmente-puedes-conseguir-m%C3%A1s-baratas-780x470.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Processors",
+      "description": "https://noticiast.com/wp-content/uploads/2021/04/intel_core_i5_11400f_vs_ryzen_5_3600-780x470.png"
     }
-  ]
+    ]
 }

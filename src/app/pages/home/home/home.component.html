@@ -6,18 +6,19 @@
   </mat-form-field>
 </mat-card>
 <h1></h1>
-<mat-card *ngFor="let pr of products" class="product-card">
-
-  <mat-card-header>
-    <mat-card-title>{{pr.name}}</mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="https://t7m8e9c8.rocketcdn.me/wp-content/uploads/2021/06/geforce-rtx-3080-ti-product-gallery-inline-850-3-780x470.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>{{pr.description}}</p>
-  </mat-card-content>
-  <mat-card-actions class="action-buttons">
-    <button mat-raised-button color="primary" matTooltip="Buy Product" (click)="navigateToPublishedProduct(pr.id)">
-      <mat-icon>shopping_cart</mat-icon></button>
-  </mat-card-actions>
-</mat-card>
+<div class="cards">
+  <mat-card *ngFor="let pr of products" class="product-card">
+    <mat-card-header>
+      <mat-card-title>{{pr.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="pr.url" alt="Photo of a Product" class="image">
+    <mat-card-content>
+      <p>{{pr.description}}</p>
+    </mat-card-content>
+    <mat-card-actions class="action-buttons">
+      <button mat-raised-button color="primary" matTooltip="Buy Product" (click)="navigateToPublishedProduct(pr.id)">
+        <mat-icon>shopping_cart</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>
+</div>
 

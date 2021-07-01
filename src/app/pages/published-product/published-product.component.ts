@@ -15,7 +15,7 @@ export class PublishedProductComponent implements OnInit {
   productForm!: NgForm;
   productId!: number;
   productData: Product = {} as Product;
-  defaultProduct: Product = { id: 0, name: '', price: 0, description: ''};
+  defaultProduct: Product = { id: 0, name: '', price: 0, description: '',url:"",category:""};
   constructor(private productsApi: ProductsApiService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
