@@ -17,7 +17,7 @@ export class OrdersComponent implements OnInit {
   @ViewChild('orderForm', { static: false }) orderForm!: NgForm;
   orderData: Order;
   dataSource = new MatTableDataSource();
-  displayedColumns: string[] = ['id', 'date', 'order_amount', 'delivery_date', 'delivery_address','actions'];
+  displayedColumns: string[] = ['id', 'userid', 'amount', 'purchase_date', 'delivery_date', 'delivery_address','actions'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   isEditMode = false;
@@ -65,7 +65,7 @@ export class OrdersComponent implements OnInit {
     console.log(this.dataSource.data);
   }
   addOrder(): void {
-    const newOrder = {date: this.orderData.date, order_amount: this.orderData.order_amount, delivery_date: this.orderData.delivery_date, delivery_address: this.orderData.delivery_address};
+    const newOrder = { userid: this.orderData.userid, amount: this.orderData.amount,purchase_date: this.orderData.purchase_date, delivery_date: this.orderData.delivery_date, delivery_address: this.orderData.delivery_address};
     this.ordersApi.addOrder(newOrder).subscribe((response: any) => {
       this.dataSource.data.push({...response});
       this.dataSource.data = this.dataSource.data.map(o => o);

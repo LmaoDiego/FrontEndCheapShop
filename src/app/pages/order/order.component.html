@@ -6,15 +6,19 @@
     <form (submit)="onSubmit()" #orderForm="ngForm">
       <p>
         <mat-form-field>
-          <mat-label>Order Name</mat-label>
-          <input matInput placeholder="Date" name="date" required [(ngModel)]="orderData.date">
+          <mat-label>User id</mat-label>
+          <input matInput placeholder="User Id" name="userid" type="number" required [(ngModel)]="orderData.userid">
         </mat-form-field>
         <mat-form-field>
-          <mat-label>Order amount</mat-label>
-          <input matInput placeholder="Oder amount" name="order_amount" type="number" required [(ngModel)]="orderData.order_amount">
+          <mat-label>Amount</mat-label>
+          <input matInput placeholder="Amount" name="amount" type="number" required [(ngModel)]="orderData.amount">
         </mat-form-field>
       </p>
       <p>
+        <mat-form-field>
+          <mat-label>Purchase date</mat-label>
+          <input matInput placeholder="Purchase date" name="purchase_date" required [(ngModel)]="orderData.purchase_date">
+        </mat-form-field>
         <mat-form-field>
           <mat-label>Delivery date</mat-label>
           <input matInput placeholder="Delivery date" name="delivery_date" required [(ngModel)]="orderData.delivery_date">
@@ -28,7 +32,6 @@
         <ng-container>
           <button mat-button class="mat-button-text" color="primary">{{ isEditMode ? 'Update' : 'Add'}}
           </button>
-
           <a mat-button class="mat-button-text" color="warn" (click)="cancelEdit()">Cancel</a>
         </ng-container>
       </p>
