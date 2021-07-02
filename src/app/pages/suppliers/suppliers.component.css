@@ -8,17 +8,15 @@
   max-height: 400px;
   border: 1px solid transparent;
 }
-.action-buttons{
-  margin-left: 300px;
-}
 .cards{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
+  align-content: space-between;
+  justify-content:space-around;
 }
+
 .image{
-  max-height: 50%;
+  max-height: 75%;
 }
 .supplier-card:hover{
   border: 1px solid black;

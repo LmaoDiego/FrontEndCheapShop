@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-form-field>
+    <mat-label>Busca tu producto ahora!</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex.Keyboard RGB" >
+    <mat-icon *ngIf="isFiltering" matSuffix>search</mat-icon>
+  </mat-form-field>
+</mat-card>
+<h1></h1>
+<div class="cards">
+  <mat-card  *ngFor="let pr of suppliers"  class="supplier-card"  (click)="navigateToSupplier(pr.name)">
+    <img mat-card-image [src]="pr.url" alt="Photo of a Supplier" class="image">
+    <mat-card-header>
+      <mat-card-title>{{pr.name}}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>

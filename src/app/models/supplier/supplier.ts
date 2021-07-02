@@ -1,6 +1,7 @@
 export interface Supplier {
-  id:string;
-  email:string;
+  id:number;
+  name:string;
   description:string;
-  number:number;
+  phone:number;
+  url:string;
 }

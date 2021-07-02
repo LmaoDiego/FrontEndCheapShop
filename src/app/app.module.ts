@@ -36,6 +36,8 @@ import {OrdersComponent} from "./pages/orders/orders.component";
 import {MatTreeModule} from "@angular/material/tree";
 import {CategoryComponent} from "./pages/category/category.component";
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { SuppliersComponent } from './pages/suppliers/suppliers.component';
+import {SupplierComponent} from "./pages/supplier/supplier.component";
 // import { SupplierComponent } from './models/supplier/supplier.component';
 
 
@@ -55,7 +57,9 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     ProductsComponent,
     PublishedProductComponent,
     EditProfileComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    SuppliersComponent,
+    SupplierComponent
   ],
   imports: [
     BrowserModule,

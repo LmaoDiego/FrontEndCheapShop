@@ -10,6 +10,8 @@ import {OrdersComponent} from "./pages/orders/orders.component";
 import {OrderComponent} from "./pages/order/order.component";
 import {CategoryComponent} from "./pages/category/category.component";
 import {CategoriesComponent} from "./pages/categories/categories.component";
+import {SuppliersComponent} from "./pages/suppliers/suppliers.component";
+import {SupplierComponent} from "./pages/supplier/supplier.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -25,6 +27,9 @@ const routes: Routes = [
   { path: 'categories', component: CategoriesComponent},
   { path: 'categories/new', component: CategoryComponent },
   { path: 'categories/:name', component: CategoryComponent },
+  { path: 'suppliers', component:   SuppliersComponent},
+  { path: 'suppliers/new', component: SupplierComponent },
+  { path: 'suppliers/:name', component: SupplierComponent },
 ];
 
 @NgModule({

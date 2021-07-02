@@ -1,1 +1,23 @@
-<p>supplier works!</p>
+<mat-card>
+  <mat-form-field>
+    <mat-label>Busca tu producto ahora!</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex.Keyboard RGB" >
+    <mat-icon *ngIf="isFiltering" matSuffix>search</mat-icon>
+  </mat-form-field>
+</mat-card>
+<h1></h1>
+<div class="cards">
+  <mat-card  *ngFor="let pr of productsFiltered"  class="supplier-card" >
+    <mat-card-header>
+      <mat-card-title>{{pr.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="pr.url" alt="Photo of a Product" class="image" >
+    <mat-card-content>
+      <p>{{pr.description}}</p>
+    </mat-card-content>
+    <mat-card-actions class="action-buttons">
+      <button mat-raised-button color="primary" matTooltip="Buy Product" (click)="navigateToPublishedProduct(pr.id)">
+        <mat-icon>shopping_cart</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>
+</div>

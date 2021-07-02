@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit, AfterViewInit,OnDestroy {
   productData: Product;
   dataSource = new MatTableDataSource();
   isFiltering = false;
-  displayedColumns: string[] = ['id', 'name', 'price', 'description','category', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'price', 'description','category','supplier', 'actions'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   isEditMode = false;
@@ -72,7 +72,8 @@ export class ProductsComponent implements OnInit, AfterViewInit,OnDestroy {
   }
   addProduct(): void {
     const newProduct = {name: this.productData.name, price: this.productData.price
-      ,description: this.productData.description,category:this.productData.category,url:this.productData.url};
+      ,description: this.productData.description,category:this.productData.category
+      ,url:this.productData.url,supplier:this.productData.supplier};
     this.productsApi.addProduct(newProduct).subscribe((response: any) => {
       this.dataSource.data.push({...response});
       this.dataSource.data = this.dataSource.data.map(o => o);

@@ -40,6 +40,11 @@ export class ProductsApiService {
     return this.http.get<Product>(`${this.basePath}/?category=${category}`)
       .pipe(retry(2), catchError(this.handleError));
   }
+  //Get Products by Supplier
+  getAllProductsBySupplier(supplier: string): Observable<Product> {
+    return this.http.get<Product>(`${this.basePath}/?supplier=${supplier}`)
+      .pipe(retry(2), catchError(this.handleError));
+  }
   // Get Product Data
   getAllProducts(): Observable<Product>{
     return this.http.get<Product>(this.basePath)

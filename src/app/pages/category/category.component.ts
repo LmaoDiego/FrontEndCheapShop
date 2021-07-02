@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
-import {Category} from "../../models/category/category";
 import {ProductsApiService} from "../../services/products-api.service";
 import {CategoriesApiService} from "../../services/categories-api.service";
 import * as _ from "lodash";
 import {ActivatedRoute, Router} from "@angular/router";
+import {Product} from "../../models/product/product";
 
 
 @Component({
@@ -15,7 +15,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class CategoryComponent implements OnInit {
 //
   productsFiltered:any=[]
-  productData:Category={} as Category;
+  productData:Product={} as Product;
   dataSource= new MatTableDataSource();
   isFiltering=false;
 
@@ -25,8 +25,8 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.productsApi.getAllProductsByCategory(this.route.snapshot.url[1].path)
-      .subscribe((response:Category)=>{
-        this.productData={} as Category;
+      .subscribe((response:Product)=>{
+        this.productData={} as Product;
         this.productData=_.cloneDeep(response);
         console.log(response);
         console.log(this.productData);
