@@ -45,10 +45,10 @@ export class CategoriesComponent implements OnInit {
     });
   }
 
-  navigateToCategory(categoryId:number): void {
+/*  navigateToCategory(categoryId:number): void {
     this.router.navigate([`categories/${categoryId}/products/`])
       .then(() => console.log(this.route.url) );
-  }
+  }*/
 //
 
   navigateToProducts(categoryName:string): void {
