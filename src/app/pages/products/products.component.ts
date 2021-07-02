@@ -71,7 +71,8 @@ export class ProductsComponent implements OnInit, AfterViewInit,OnDestroy {
     console.log(this.dataSource.data);
   }
   addProduct(): void {
-    const newProduct = {name: this.productData.name, price: this.productData.price, description: this.productData.description,category:this.productData.category};
+    const newProduct = {name: this.productData.name, price: this.productData.price
+      ,description: this.productData.description,category:this.productData.category,url:this.productData.url};
     this.productsApi.addProduct(newProduct).subscribe((response: any) => {
       this.dataSource.data.push({...response});
       this.dataSource.data = this.dataSource.data.map(o => o);

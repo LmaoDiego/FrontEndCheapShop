@@ -95,6 +95,70 @@
       "description": "RGB gaming Keyboard analog",
       "url": "https://static.techspot.com/images/products/2021/keyboards/org/2021-02-05-product-2.jpg",
       "category": "Keyboards"
+    },
+    {
+      "id": 13,
+      "name": "Z-13 Super ",
+      "price": 100,
+      "description": "Gamer Chair  180° white",
+      "url": "https://realplaza.vtexassets.com/arquivos/ids/16386049/image-f6502ba933324808bdda3b7e6038ef99.jpg?v=637520519325700000",
+      "category": "Chairs"
+    },
+    {
+      "id": 14,
+      "name": "Omega Red",
+      "price": 80,
+      "description": "Generic gamer chair red",
+      "url": "http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/01/21192558/DXT1013RD_0.jpg",
+      "category": "Chairs"
+    },
+    {
+      "id": 15,
+      "name": "SGAZ ",
+      "price": 70,
+      "description": "Ergonomic gamer chair ",
+      "url": "http://cdn.shopify.com/s/files/1/2044/9817/products/SGAZ_0_1200x1200.jpg?v=1623327265",
+      "category": "Chairs"
+    },
+    {
+      "id": 16,
+      "name": "Laptop Hp 15-DW1085LA",
+      "price": 1500,
+      "description": "Intel Core i3-10110U, 4GB, 256GB SSD, 15,6",
+      "url": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42257865_2-r4UHllLT.png",
+      "category": "Laptops"
+    },
+    {
+      "id": 17,
+      "name": "Laptop ASUS X507M",
+      "price": 1200,
+      "description": "Celeron 4GB, 500GB, 15.6HD, Windows 10",
+      "url": "https://www.compugenio.com/wp-content/uploads/2020/10/laptop-asus-x507m-celeron-4gb-500gb-156-hd-windows-10-90nb0hl1-m07240-2.jpg",
+      "category": "Laptops"
+    },
+    {
+      "id": 18,
+      "name": "Apple MacBook Air",
+      "price": 1550,
+      "description": "Intel Core i5 1.80 GHz, 8GB LPDDR3, 128 GB SSD",
+      "url": "https://cuscoinformatico.com/storage/apple%20macbook%20air,%2013.3-03.jpg",
+      "category": "Laptops"
+    },
+    {
+      "id": 19,
+      "name": "Intel Core i9 10900",
+      "price": 1200,
+      "description": "2.8GHz/20MB LGA 1200",
+      "url": "https://cyccomputer.pe/30159-large_default/procesador-intel-core-i9-10900-28ghz20mb-lga-1200-pnbx8070110900.jpg",
+      "category": "Processors"
+    },
+    {
+      "id": 20,
+      "name": "Gigabyte Geforce GTX 1050 TI",
+      "price": 1000,
+      "description": "Nvidea GDDR5 4GB",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/810mHUuMxuL._AC_SL1500_.jpg",
+      "category": "Graphic Cards"
     }
   ],
   "users": [
