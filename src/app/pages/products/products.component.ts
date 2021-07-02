@@ -25,6 +25,7 @@ export class ProductsComponent implements OnInit, AfterViewInit,OnDestroy {
   isEditMode = false;
 
 
+
   constructor(public productsApi: ProductsApiService, private router: Router) {
     this.productData = {} as Product;
   }

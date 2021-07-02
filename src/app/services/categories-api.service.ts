@@ -35,6 +35,12 @@ export class CategoriesApiService {
     return this.http.get<Category>(`${this.basePath}/${id}`, this.httpOptions )
       .pipe(retry(2), catchError(this.handleError));
   }
+  //DG
+  getAllCategoriesById(id:number):Observable<Category>{
+    return this.http.get<Category>(`${this.basePath}/${id}/products`,this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+  //
   // Get Category Data
   getAllCategories(): Observable<Category>{
     return this.http.get<Category>(this.basePath)

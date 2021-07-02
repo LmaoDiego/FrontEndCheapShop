@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'orders/:id', component: OrderComponent },
   { path: 'categories', component: CategoriesComponent},
   { path: 'categories/new', component: CategoryComponent },
-  { path: 'categories/:name', component: CategoryComponent },
+  { path: 'categories/:id', component: CategoryComponent },
 ];
 
 @NgModule({

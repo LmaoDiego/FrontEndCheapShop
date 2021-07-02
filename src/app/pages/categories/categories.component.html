@@ -7,8 +7,8 @@
 </mat-card>
 <h1></h1>
 <div class="cards">
-  <mat-card  *ngFor="let pr of categories"  class="category-card"  (click)="navigateToCategory(pr.name)">
-    <img mat-card-image [src]="pr.description" alt="Photo of a Category" class="image">
+  <mat-card  *ngFor="let pr of categories"  class="category-card"  (click)="navigateToProducts(pr.name)">
+    <img mat-card-image [src]="pr.description" alt="Photo of a Shiba Inu" >
     <mat-card-header>
       <mat-card-title>{{pr.name}}</mat-card-title>
     </mat-card-header>
