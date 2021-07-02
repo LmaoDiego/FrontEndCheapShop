@@ -17,7 +17,7 @@ export class ProductComponent implements OnInit {
   isEditMode = false;
   productId!: number;
   productData: Product = {} as Product;
-  defaultProduct: Product = { id: 0, name: '', price: 0, description: ''};
+  defaultProduct: Product = { id: 0, name: '', price: 0, description: '',url:"",category:""};
 
 //
   constructor(private productsApi: ProductsApiService, private router: Router, private route: ActivatedRoute) { }
@@ -55,7 +55,7 @@ export class ProductComponent implements OnInit {
       });
   }
   addProduct(): void {
-    const newProduct = {name: this.productData.name, price: this.productData.price, description: this.productData.description};
+    const newProduct = {name: this.productData.name, price: this.productData.price, description: this.productData.description,url:this.productData.url,category:this.productData.category};
     this.productsApi.addProduct(newProduct)
       .subscribe(() => {
         this.navigateToProducts();

@@ -20,6 +20,20 @@
           <input matInput placeholder="Description" name="description" required [(ngModel)]="productData.description">
         </mat-form-field>
       </p>
+        <p>
+          <mat-form-field>
+            <mat-label>Category</mat-label>
+            <input matInput placeholder="Category" name="category" required [(ngModel)]="productData.category">
+          </mat-form-field>
+        </p>
+        <p>
+        <p>
+          <mat-form-field>
+            <mat-label>Url</mat-label>
+            <input matInput placeholder="Url" name="url" required [(ngModel)]="productData.url">
+          </mat-form-field>
+        </p>
+        <p>
       <p>
         <ng-container>
           <button mat-button class="mat-button-text" color="primary">{{ isEditMode ? 'Update' : 'Add'}}

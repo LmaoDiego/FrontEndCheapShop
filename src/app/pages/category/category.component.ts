@@ -1,9 +1,11 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {NgForm} from "@angular/forms";
+import {Component, OnInit} from '@angular/core';
+import {MatTableDataSource} from "@angular/material/table";
 import {Category} from "../../models/category/category";
+import {ProductsApiService} from "../../services/products-api.service";
 import {CategoriesApiService} from "../../services/categories-api.service";
-import {ActivatedRoute, Router} from "@angular/router";
 import * as _ from "lodash";
+import {ActivatedRoute, Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-category',
@@ -12,75 +14,39 @@ import * as _ from "lodash";
 })
 export class CategoryComponent implements OnInit {
 //
-  @ViewChild('categoryForm', { static: false })
-  categoryForm!: NgForm;
-  isEditMode= false;
-  categoryId!: number;
-  categoryData: Category = {} as Category;
-  defaultCategory: Category = { id: 0, name: '',description: ''};
+  productsFiltered:any=[]
+  productData:Category={} as Category;
+  dataSource= new MatTableDataSource();
+  isFiltering=false;
+
 //
-  constructor(private categoriesApi:CategoriesApiService, private router:Router,private route:ActivatedRoute) { }
+  constructor(private productsApi:ProductsApiService,private categoriesApi:CategoriesApiService
+              ,private router:Router,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.categoryId = Number(this.route.params.subscribe( params => {
-      if (params.id) {
-        const id = params.id;
-        console.log(id);
-        this.retrieveCategory(id);
-        this.isEditMode = true;
-        return id;
-      } else {
-        this.resetCategory();
-        this.isEditMode = false;
-        return 0;
-      }
-    }));
-  }
-  navigateToCategories(): void {
-    this.router.navigate(['/categories'])
-      .then(() => console.log(this.route.url) );
-  }
-  resetCategory(): void {
-    this.categoryData = this.defaultCategory;
-  }
-  retrieveCategory(id: number): void {
-    this.categoriesApi.getCategoryById(id)
-      .subscribe((response: Category) => {
-        this.categoryData = {} as Category;
-        this.categoryData = _.cloneDeep(response);
+    this.productsApi.getAllProductsByCategory(this.route.snapshot.url[1].path)
+      .subscribe((response:Category)=>{
+        this.productData={} as Category;
+        this.productData=_.cloneDeep(response);
         console.log(response);
-        console.log(this.categoryData);
+        console.log(this.productData);
+        this.productsFiltered=response;
       });
-  }
-  addCategory(): void {
-    const newCategory = {name: this.categoryData.name, description: this.categoryData.description};
-    this.categoriesApi.addCategory(newCategory)
-      .subscribe(() => {
-        this.navigateToCategories();
-      });
-  }
-  cancelEdit(): void {
-    this.navigateToCategories();
-  }
-  updateCategory(): void {
-    this.categoriesApi.updateCategory(this.categoryData.id, this.categoryData as Category)
-      .subscribe(response => {
-        console.log(response);
-      });
-    this.navigateToCategories();
-  }
-  onSubmit(): void {
-    if (this.categoryForm.form.valid) {
-      console.log(this.categoryData);
-      if (this.isEditMode) {
-        this.updateCategory();
-      } else {
-        this.addCategory();
-      }
-    } else {
-      console.log('Invalid Data');
-    }
+
   }
 
+  navigateToPublishedProduct(productId:number): void {
+    this.router.navigate([`catalog/product/${productId}`])
+      .then(() => console.log(this.route.url) );
+  }
+
+  applyFilter(event: Event): void {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+    this.isFiltering = !!filterValue;
+  }
 
 }
