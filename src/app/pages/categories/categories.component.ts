@@ -38,12 +38,6 @@ export class CategoriesComponent implements OnInit {
     this.router.navigate([`categories/${categoryName}`])
       .then(() => console.log(this.route.url) );
   }
-//
-  getAllCategoriesById(categoryId:number): void {
-    this.productsApi.getProductById(categoryId).subscribe((response: any) => {
-      this.dataSource.data = response;
-    });
-  }
 
 /*  navigateToCategory(categoryId:number): void {
     this.router.navigate([`categories/${categoryId}/products/`])
