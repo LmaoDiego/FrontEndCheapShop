@@ -1,0 +1,22 @@
+<mat-card class="login-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Sugerencias</mat-card-title>
+    <mat-card-subtitle>Como empresa CheapShop recibe tus sugerencias para que aportes a otros usuarios como tú con necesidades tecnológicas a un gran precio a comparación de la competencia.
+      Por ello, si quieres un nuevo producto en nuestra plataforma puedes sugerirlo. </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg" alt="u">
+
+  <table class="example-full-width" cellspacing="30"><tr>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label >Producto sugerido</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width" appearance="fill" >
+      <mat-label>Precio Aproximado</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+    <button mat-raised-button color="accent" (click)="openDialog()">ENVIAR</button>
+
+  </tr></table>
+</mat-card>
