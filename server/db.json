@@ -2,15 +2,183 @@
   "products": [
     {
       "id": 1,
-      "name": "RTX 3080",
-      "price": 1500,
-      "description": "New Generation Graphic"
+      "name": "Ryzen 3 3200G",
+      "price": 500,
+      "description": "Ryzen 3 up to 3.9ghz",
+      "url": "https://www.muycomputer.com/wp-content/uploads/2017/07/RYZEN-3-2.jpg",
+      "category": "Processors",
+      "supplier": "AMD"
     },
     {
+      "id": 2,
       "name": "Ryzen 5 3600",
+      "price": 700,
+      "description": "Ryzen 5 up to 4.1ghz",
+      "url": "https://www.amd.com/system/files/2019-06/238593-ryzen-5-pib-left-facing-1260x709.png",
+      "category": "Processors",
+      "supplier": "AMD"
+    },
+    {
+      "id": 3,
+      "name": "Ryzen 7 3800XT",
+      "price": 1000,
+      "description": "Ryzen 7 up to 4.7ghz",
+      "url": "https://www.amd.com/system/files/2020-06/450039-amd-ryzen-7-3rd-gen-PIB-left-facing-1260x709.png",
+      "category": "Processors",
+      "supplier": "AMD"
+    },
+    {
+      "id": 4,
+      "name": "RTX 3080",
       "price": 1500,
-      "description": "Ryzen 5 up to 3.3ghz",
-      "id": 2
+      "description": "New Generation Graphic",
+      "url": "https://www.fm1053.com.ar/web/wp-content/uploads/2021/06/1024_2000-780x470.jpg",
+      "category": "Graphic Cards",
+      "supplier": "Nvidia"
+    },
+    {
+      "id": 5,
+      "name": "RTX 2080 TI",
+      "price": 1400,
+      "description": "New Generation Graphic",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/514km%2BZccrL._AC_SL1000_.jpg",
+      "category": "Graphic Cards",
+      "supplier": "Nvidia"
+    },
+    {
+      "id": 6,
+      "name": "RTX 5600 XT",
+      "price": 1400,
+      "description": "New Generation Graphic",
+      "url": "https://bluepail.com.co/wp-content/uploads/2020/08/radeon5600xtgigabyte.jpg",
+      "category": "Graphic Cards",
+      "supplier": "AMD"
+    },
+    {
+      "id": 7,
+      "name": "Razer Orochi V2",
+      "price": 70,
+      "description": "Mouse gamer white",
+      "url": "https://assets2.razerzone.com/images/pnx.assets/ca2f7dabb8b54e111b4272884d4663e1/orochi-white.jpg",
+      "category": "Computer Mice",
+      "supplier": "Razer"
+    },
+    {
+      "id": 8,
+      "name": "Logitech MX Master 3",
+      "price": 100,
+      "description": "Mouse gamer black",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/614w3LuZTYL._AC_SL1500_.jpg",
+      "category": "Computer Mice",
+      "supplier": "Logitech"
+    },
+    {
+      "id": 9,
+      "name": "Antryx Chrome Storm Xcalibur",
+      "price": 50,
+      "description": "Mouse gamer black",
+      "url": "https://http2.mlstatic.com/D_NQ_NP_885487-MPE43580778477_092020-O.jpg",
+      "category": "Computer Mice",
+      "supplier": "Antryx"
+    },
+    {
+      "id": 10,
+      "name": "Logitech Craft",
+      "price": 200,
+      "description": "Design keyboard",
+      "url": "https://i.blogs.es/86e5c4/high_resolution-craft-lifestyle-12/450_1000.png",
+      "category": "Keyboards",
+      "supplier": "Logitech"
+    },
+    {
+      "id": 11,
+      "name": "Vulcan 120 AIMO",
+      "price": 140,
+      "description": "RGB gaming Keyboard",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/81fOOFV6T8L._AC_SL1500_.jpg",
+      "category": "Keyboards",
+      "supplier": "Roccat"
+    },
+    {
+      "id": 12,
+      "name": "Razer Huntsman V2 ",
+      "price": 210,
+      "description": "RGB gaming Keyboard analog",
+      "url": "https://static.techspot.com/images/products/2021/keyboards/org/2021-02-05-product-2.jpg",
+      "category": "Keyboards",
+      "supplier": "Razer"
+    },
+    {
+      "id": 13,
+      "name": "Z-13 Super",
+      "price": 100,
+      "description": "Gamer Chair  180° white",
+      "url": "https://realplaza.vtexassets.com/arquivos/ids/16386049/image-f6502ba933324808bdda3b7e6038ef99.jpg?v=637520519325700000",
+      "category": "Chairs",
+      "supplier": "Devoko"
+    },
+    {
+      "id": 14,
+      "name": "Omega Red",
+      "price": 80,
+      "description": "Generic gamer chair red",
+      "url": "http://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/01/21192558/DXT1013RD_0.jpg",
+      "category": "Chairs",
+      "supplier": "Thermaltake"
+    },
+    {
+      "id": 15,
+      "name": "SGAZ ",
+      "price": 70,
+      "description": "Ergonomic gamer chair ",
+      "url": "http://cdn.shopify.com/s/files/1/2044/9817/products/SGAZ_0_1200x1200.jpg?v=1623327265",
+      "category": "Chairs",
+      "supplier": "Devoko"
+    },
+    {
+      "id": 16,
+      "name": "Laptop Hp 15-DW1085LA",
+      "price": 1500,
+      "description": "Intel Core i3-10110U, 4GB, 256GB SSD, 15,6",
+      "url": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42257865_2-r4UHllLT.png",
+      "category": "Laptops",
+      "supplier": "Hp"
+    },
+    {
+      "id": 17,
+      "name": "Laptop ASUS X507M",
+      "price": 1200,
+      "description": "Celeron 4GB, 500GB, 15.6HD, Windows 10",
+      "url": "https://www.compugenio.com/wp-content/uploads/2020/10/laptop-asus-x507m-celeron-4gb-500gb-156-hd-windows-10-90nb0hl1-m07240-2.jpg",
+      "category": "Laptops",
+      "supplier": "ASUS"
+    },
+    {
+      "id": 18,
+      "name": "Apple MacBook Air",
+      "price": 1550,
+      "description": "Intel Core i5 1.80 GHz, 8GB LPDDR3, 128 GB SSD",
+      "url": "https://cuscoinformatico.com/storage/apple%20macbook%20air,%2013.3-03.jpg",
+      "category": "Laptops",
+      "supplier": "Apple"
+    },
+    {
+      "id": 19,
+      "name": "Intel Core i9 10900",
+      "price": 1200,
+      "description": "2.8GHz/20MB LGA 1200",
+      "url": "https://cyccomputer.pe/30159-large_default/procesador-intel-core-i9-10900-28ghz20mb-lga-1200-pnbx8070110900.jpg",
+      "category": "Processors",
+      "supplier": "Intel"
+    },
+    {
+      "id": 20,
+      "name": "Gigabyte Geforce GTX 1050 TI",
+      "price": 1000,
+      "description": "Nvidia GDDR5 4GB",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/810mHUuMxuL._AC_SL1500_.jpg",
+      "category": "Graphic Cards",
+      "supplier": "Nvidia"
     }
   ],
   "users": [
@@ -35,35 +203,25 @@
   ],
   "orders": [
     {
-      "id": 3,
-      "amount": 1500,
-      "purchase_date": "28 de mayo",
+      "id": 1,
+      "date": "21 de abril",
+      "order_amount": 4000,
       "delivery_date": "30 de julio",
-      "delivery_address": "Av. Caiman",
-      "userid": 1
+      "delivery_address": "Av.los aires"
     },
     {
-      "userid": 4,
-      "amount": 3000,
-      "purchase_date": "13 de julio",
-      "delivery_date": "13 de agosto",
-      "delivery_address": "Av. los Aires",
-      "id": 4
-    },
-    {
-      "userid": 1,
-      "amount": 1000,
-      "purchase_date": "11 de junio",
-      "delivery_date": "23 de agosto",
-      "delivery_address": "Av. Caiman",
-      "id": 5
+      "id": 2,
+      "date": "27 de mayo",
+      "order_amount": 8000,
+      "delivery_date": "30 de julio",
+      "delivery_address": "Av.los aires"
     }
   ],
   "categories": [
     {
       "id": 1,
       "name": "Graphic Cards",
-      "description": "https://t7m8e9c8.rocketcdn.me/wp-content/uploads/2021/06/geforce-rtx-3080-ti-product-gallery-inline-850-3-780x470.jpg"
+      "description": "https://itseller.bo/wp-content/uploads/2020/08/de3erf-780x470.jpg"
     },
     {
       "id": 2,
@@ -84,6 +242,42 @@
       "id": 5,
       "name": "Laptops",
       "description": "https://dlprivateserver.com/wp-content/uploads/2021/05/5-laptops-para-juegos-que-actualmente-puedes-conseguir-m%C3%A1s-baratas-780x470.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Processors",
+      "description": "https://noticiast.com/wp-content/uploads/2021/04/intel_core_i5_11400f_vs_ryzen_5_3600-780x470.png"
     }
+  ],
+  "suppliers": [
+    {
+      "id": 1,
+      "name": "AMD",
+      "description": "Processors and Graphic Cards supplier",
+      "phone":561854841,
+      "url": "https://www.amd.com/system/files/amd-logo-circuit-background-1200x628.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Intel",
+      "description": "Processors supplier",
+      "phone":561854842,
+      "url": "https://hardzone.es/app/uploads-hardzone.es/2020/05/Intel-logo-CPU-Port%C3%A1til.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Razer",
+      "description": "Mice supplier",
+      "phone":561854843,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhcZo0W_43nRsLBYPW-KMj7wwCdVIucTnLvWyOh0QKo8hxYOGmM8OZ8YnZb1kdGhWwBasyiLD-WrpiCg&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Nvidia",
+      "description": "Graphic Cards supplier",
+      "phone":561854844,
+      "url": "https://www.muycomputerpro.com/wp-content/uploads/2020/04/NVIDIA.jpg"
+    }
+
   ]
 }
