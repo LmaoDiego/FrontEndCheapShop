@@ -1,6 +1,8 @@
 {
+
   "products": [
     {
+
       "id": 1,
       "name": "Ryzen 3 3200G",
       "price": 500,
@@ -201,21 +203,41 @@
       "phoneNumber": 987456321
     }
   ],
-  "orders": [
+
+
+"orders": [
     {
       "id": 1,
-      "date": "21 de abril",
-      "order_amount": 4000,
+      "userid":4,
+      "purchase_date": "21 de abril",
+      "amount": 4000,
       "delivery_date": "30 de julio",
       "delivery_address": "Av.los aires"
     },
     {
       "id": 2,
-      "date": "27 de mayo",
-      "order_amount": 8000,
-      "delivery_date": "30 de julio",
+      "userid":1,
+      "purchase_date": "27 de mayo",
+      "amount": 8000,
+      "delivery_date": "30 de septiembre",
       "delivery_address": "Av.los aires"
-    }
+    },
+  {
+    "id": 3,
+    "userid":1,
+    "purchase_date": "27 de jun",
+    "amount": 780,
+    "delivery_date": "30 de agosto",
+    "delivery_address": "Av.Colmena"
+  },
+  {
+    "id": 4,
+    "userid":1,
+    "purchase_date": "27 de mayo",
+    "amount": 580,
+    "delivery_date": "30 de junio",
+    "delivery_address": "Av.San Bartolos"
+  }
   ],
   "categories": [
     {

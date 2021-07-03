@@ -38,6 +38,9 @@ import {CategoryComponent} from "./pages/category/category.component";
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { SuppliersComponent } from './pages/suppliers/suppliers.component';
 import {SupplierComponent} from "./pages/supplier/supplier.component";
+import { LoginComponent } from './pages/login/login.component';
+import { DialogComponent } from './pages/dialog/dialog.component';
+
 // import { SupplierComponent } from './models/supplier/supplier.component';
 
 
@@ -59,7 +62,9 @@ import {SupplierComponent} from "./pages/supplier/supplier.component";
     EditProfileComponent,
     CategoriesComponent,
     SuppliersComponent,
-    SupplierComponent
+    SupplierComponent,
+    LoginComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,6 +84,9 @@ import {SupplierComponent} from "./pages/supplier/supplier.component";
     MatTooltipModule,
     MatDialogModule,
     MatTreeModule,
+  ],
+  entryComponents:[
+    LoginComponent
   ],
   providers: [ProductsApiService],
   bootstrap: [AppComponent]

@@ -38,6 +38,7 @@ export class ProductComponent implements OnInit {
       }
     }));
   }
+
   navigateToProducts(): void {
     this.router.navigate(['/products'])
       .then(() => console.log(this.route.url) );
