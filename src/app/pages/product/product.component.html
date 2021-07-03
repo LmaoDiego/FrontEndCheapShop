@@ -27,13 +27,17 @@
           </mat-form-field>
         </p>
         <p>
-        <p>
           <mat-form-field>
             <mat-label>Url</mat-label>
             <input matInput placeholder="Url" name="url" required [(ngModel)]="productData.url">
           </mat-form-field>
         </p>
         <p>
+          <mat-form-field>
+            <mat-label>Supplier</mat-label>
+            <input matInput placeholder="Supplier" name="supplier" required [(ngModel)]="productData.supplier">
+          </mat-form-field>
+        </p>
       <p>
         <ng-container>
           <button mat-button class="mat-button-text" color="primary">{{ isEditMode ? 'Update' : 'Add'}}
