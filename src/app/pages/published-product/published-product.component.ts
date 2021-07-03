@@ -38,4 +38,8 @@ export class PublishedProductComponent implements OnInit {
         console.log(this.productData);
       });
   }
+  navigateToCommentsProduct(productName:string): void {
+    this.router.navigate([`comments/${productName}`])
+      .then(() => console.log(this.route.url) );
+  }
 }

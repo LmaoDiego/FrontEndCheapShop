@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "name": "Razer Huntsman V2 ",
+      "name": "Razer Huntsman V2",
       "price": 210,
       "description": "RGB gaming Keyboard analog",
       "url": "https://static.techspot.com/images/products/2021/keyboards/org/2021-02-05-product-2.jpg",
@@ -128,7 +128,7 @@
     },
     {
       "id": 15,
-      "name": "SGAZ ",
+      "name": "SGAZ",
       "price": 70,
       "description": "Ergonomic gamer chair ",
       "url": "http://cdn.shopify.com/s/files/1/2044/9817/products/SGAZ_0_1200x1200.jpg?v=1623327265",
@@ -278,6 +278,107 @@
       "phone":561854844,
       "url": "https://www.muycomputerpro.com/wp-content/uploads/2020/04/NVIDIA.jpg"
     }
-
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "description": "Que buen producto!",
+      "product": "Ryzen 3 3200G"
+    },
+    {
+      "id": 2,
+      "description": "Interesante producto",
+      "product": "Ryzen 5 3600"
+    },
+    {
+      "id": 3,
+      "description": "Este producto está buena es de última generación",
+      "product": "Ryzen 7 3800XT"
+    },
+    {
+      "id": 4,
+      "description": "Se ve potente el producto",
+      "product": "RTX 3080"
+    },
+    {
+      "id": 5,
+      "description": "Interesante el producto que ofrecen",
+      "product": "RTX 2080 TI"
+    },
+    {
+      "id": 6,
+      "description": "Uno más a la lista :)",
+      "product": "RTX 5600 XT"
+    },
+    {
+      "id": 7,
+      "description": "Interesante producto",
+      "product": "Razer Orochi V2"
+    },
+    {
+      "id": 8,
+      "description": "Me gustaría tener uno de esos",
+      "product": "Logitech MX Master 3"
+    },
+    {
+      "id": 9,
+      "description": "Muy buen diseño",
+      "product": "Antryx Chrome Storm Xcalibur"
+    },
+    {
+      "id": 10,
+      "description": "Necesito este teclado nuevo",
+      "product": "Logitech Craft"
+    },
+    {
+      "id": 11,
+      "description": "Este teclado estaba buscando",
+      "product": "Vulcan 120 AIMO"
+    },
+    {
+      "id": 12,
+      "description": "Me gusta el diseño de este teclado",
+      "product": "Razer Huntsman V2"
+    },
+    {
+      "id": 13,
+      "description": "Me gusta este producto",
+      "product": "Z-13 Super"
+    },
+    {
+      "id": 14,
+      "description": "Muy bueno el producto",
+      "product": "Omega Red"
+    },
+    {
+      "id": 15,
+      "description": "Interesante producto",
+      "product": "SGAZ"
+    },
+    {
+      "id": 16,
+      "description": "Esta laptop la necesito para realizar mis trabajos",
+      "product": "Laptop Hp 15-DW1085LA"
+    },
+    {
+      "id": 17,
+      "description": "Una laptop interesante por sus características",
+      "product": "Laptop ASUS X507M"
+    },
+    {
+      "id": 18,
+      "description": "Este Mac lo necesito ya",
+      "product": "Apple MacBook Air"
+    },
+    {
+      "id": 19,
+      "description": "Este procesador es de lo último en tecnología",
+      "product": "Intel Core i9 10900"
+    },
+    {
+      "id": 20,
+      "description": "Esta tajeta gráfica es la que quiero",
+      "product": "Gigabyte Geforce GTX 1050 TI"
+    }
   ]
 }

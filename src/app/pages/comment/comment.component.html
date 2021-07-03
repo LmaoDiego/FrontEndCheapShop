@@ -1,1 +1,8 @@
-<p>comment works!</p>
+<mat-card>
+  <mat-card-title>Comments</mat-card-title>
+  <h1></h1>
+  <mat-card-content *ngFor="let cm of comments" class="comment-card">
+    <p>{{cm.description}}</p>
+  </mat-card-content>
+</mat-card>
+

@@ -38,6 +38,7 @@ import {CategoryComponent} from "./pages/category/category.component";
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { SuppliersComponent } from './pages/suppliers/suppliers.component';
 import {SupplierComponent} from "./pages/supplier/supplier.component";
+import {CommentComponent} from "./pages/comment/comment.component";
 // import { SupplierComponent } from './models/supplier/supplier.component';
 
 
@@ -47,7 +48,7 @@ import {SupplierComponent} from "./pages/supplier/supplier.component";
     OrderComponent,
     OrdersComponent,
     CategoryComponent,
-    // CommentComponent,
+    CommentComponent,
     // DepartmentComponent,
     // DistrictComponent,
     ProductComponent,

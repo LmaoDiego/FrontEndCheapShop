@@ -12,6 +12,7 @@ import {CategoryComponent} from "./pages/category/category.component";
 import {CategoriesComponent} from "./pages/categories/categories.component";
 import {SuppliersComponent} from "./pages/suppliers/suppliers.component";
 import {SupplierComponent} from "./pages/supplier/supplier.component";
+import {CommentComponent} from "./pages/comment/comment.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'suppliers', component:   SuppliersComponent},
   { path: 'suppliers/new', component: SupplierComponent },
   { path: 'suppliers/:name', component: SupplierComponent },
+  { path: 'comments/:name', component: CommentComponent },
 ];
 
 @NgModule({
